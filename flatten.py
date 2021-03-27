@@ -31,5 +31,6 @@ def flatten(data: Dict) -> Dict:
 
 if __name__ == "__main__":
     data = json.loads(sys.stdin.read())
+    flattened = flatten(data)
 
-    print(flatten(data))
+    print(json.dumps(flattened))
