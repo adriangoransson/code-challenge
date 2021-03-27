@@ -21,6 +21,11 @@ def _flatten(data: Dict, prefix: List[str]) -> Dict:
 
 
 def flatten(data: Dict) -> Dict:
+    """Flattens a key-value object.
+
+    Nested keys are represented by a dot-separated prefix.
+    """
+
     return _flatten(data, [])
 
 
